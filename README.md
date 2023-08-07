@@ -77,4 +77,4 @@ vagrant destroy -f
 
 #### Who do I talk to? ###
 
-[Paulius Verseckas](mailto:paulius.verseckas@zenitech.co.uk)
+[Paulius Verseckas](mailto:verseckas.paulius@gmail.com)
