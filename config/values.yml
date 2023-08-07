@@ -1,0 +1,49 @@
+# Vagrant User Settings
+
+config:
+  VAGRANTFILE_API_VERSION: "2"
+  box: "generic/centos9s"
+  custom_cpu_mem: "yes"
+  desktop: "no"
+  enable_custom_boxes: "yes"
+  enable_port_forwards: "yes"
+  linked_clones: "no"
+  provision_nodes: "no"
+  server_cpus: 1
+  server_memory: 512
+  subnet: "192.168.56."
+  subnet_ip_start: 200
+  custom_ip: "yes"
+  additional_disks: "no"
+  additional_disks_controller: "SATA Controller"
+  additional_disks_num: 1
+  additional_disks_size: 2
+  additional_nics: "yes"
+  additional_nics_dhcp: "yes"
+  additional_nics_num: 1
+  playbook_path: "playbook.yml"
+
+# Vagrant Box Settings
+
+boxes:
+  centos9:
+    enabled: true
+    id: 0
+    node: node0
+    hostname: centos9
+    box: "generic/centos9s"
+    cpu: 1
+    mem: 256
+    custom_ip: "192.168.56.50"
+    ssh_port: 2200   
+
+  centos8:
+    enabled: false
+    id: 1
+    node: node1
+    hostname: centos8
+    box: "generic/centos8s"
+    cpu: 1
+    mem: 256
+    custom_ip: "192.168.56.51"
+    ssh_port: 2201
